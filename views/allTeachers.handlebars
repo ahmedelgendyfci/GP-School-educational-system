@@ -1,0 +1,33 @@
+<section class="all-teachers">
+    <section class="teachers-table p-2">
+        <table class="table table-hover table-dark ">
+            <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Edit/delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each teachers}}
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>{{name}}</td>
+                    <td>{{email}}</td>
+                    <td>{{phoneNumber}}</td>
+                    <td>{{address}}</td>
+                    <td>{{gender}}</td>
+                    <td>
+                        <a href="#" onclick="editItem('teacher/{{_id}}')">Edit</a>
+                        <a href="#" onclick="deleteItem('/teacher/{{_id}}','allTeachers')" >Delete</a>
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </section>
+</section>

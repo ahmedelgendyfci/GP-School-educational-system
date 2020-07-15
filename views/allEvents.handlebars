@@ -1,0 +1,23 @@
+<section class="all-events">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Event Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Event Date</th>
+            <th scope="col">Edit / Delete</th>
+        </tr>
+        </thead>
+        <tbody> {{#each events}}
+            <tr>
+                <td>{{eventTitle}}</td>
+                <td>{{description}}</td>
+                <td>{{eventDate}}</td>
+                <td>
+                    <a href="#" onclick="editItem('editEvent/{{_id}}')">Edit</a>
+                    <a href="#" onclick="deleteItem('/event/{{_id}}','allEvents')" >Delete</a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</section>

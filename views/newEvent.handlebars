@@ -1,0 +1,18 @@
+<section class="new-event w-75 mx-auto p-4">
+    <form action="">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Event Title</label>
+            <input type="text" class="form-control" id="eventTitle" placeholder="Event Title">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Event Description</label>
+            <textarea class="form-control" id="eventDescription" rows="8" placeholder="Enter your event description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="">Start Date</label>
+            <input class="date" type="datetime-local" name="startDate" id="eventDate">
+        </div>
+    </form>
+    <button class="btn btn-outline-secondary" type="submit" onclick="sendEventData()">Submit</button>
+</section>

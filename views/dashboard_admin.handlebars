@@ -1,0 +1,345 @@
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>{{pageTitle}}</title>
+</head>
+<body>
+<div>{{pageTitle}}</div>
+<div class="row">
+    <section class="col-3 left-side">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button id="student" class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span class="icon"><i class="far fa-user"></i></span>
+                            Student
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+<!--                        onclick="loadDoc('right-side','adminNewStudent')"-->
+                        <button class="btn btn-block text-left" type="button" id="dashboarNewStudent">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            New Student
+                        </button>
+                        <button class="btn btn-block text-left" type="button" id="dashboardAllStudents">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            All Students
+                        </button>
+                        <button class="btn btn-block text-left" type="button">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            Update Student
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button id="teacher"  class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="icon"><i class="far fa-user"></i></span>
+                            Teacher
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="btn btn-block text-left" type="button" id="dashboardNewTeacher" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            New Teacher
+                        </button>
+                        <button class="btn btn-block text-left" type="button" id="dashboardAllTeachers" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            All Teachers
+                        </button>
+                        <button class="btn btn-block text-left" type="button">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            Update Teacher Timetable
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button id="librarian"  class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="icon"><i class="far fa-user"></i></span>
+                            Librarian
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="btn btn-block text-left" type="button" id="dashboardNewLibrarian" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            New Librarian
+                        </button>
+                        <button class="btn btn-block text-left" type="button" id="dashboardAllLibrarians">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            All Librarians
+                        </button>
+                        <button class="btn btn-block text-left" type="button">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            Update librarian
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button id="parent" class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <span class="icon"><i class="far fa-user"></i></span>
+                            Parent
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="btn btn-block text-left" type="button" id="dashboardNewParent">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            New Parent
+                        </button>
+                        <button class="btn btn-block text-left" type="button"  id="dashboardAllParents" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            All Parents
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button id="timetable" class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <span class="icon"><i class="fas fa-clipboard-list"></i></span>
+                            Time-table
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="btn btn-block text-left" type="button" id="dashboardStudentTimetable" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            New Time-table
+                        </button>
+                        <button class="btn btn-block text-left" type="button" id="dashboardAllTimetables" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            All Time-tables
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                        <button id="event" class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            <span class="icon"><i class="fas fa-calendar-week"></i></span>
+                            Event
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseSix" class="collapse " aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <button class="btn btn-block text-left" type="button" id="dashboardNewEvent" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            New Event
+                        </button>
+                        <button class="btn btn-block text-left" type="button" id="dashboardAllEvents" >
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            All Events
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                        <button id="book" class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                            <span class="icon"><i class="fas fa-book"></i></span>
+                            Book
+                            <span class="arrow1"><i class="fas fa-arrow-left"></i></span>
+                            <span class="arrow2"><i class="fas fa-arrow-down"></i></span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseSeven" class="collapse " aria-labelledby="headingSeven" data-parent="#accordionExample" onclick="load">
+                    <div class="card-body">
+                        <button class="btn btn-block text-left" type="button" id="dashboardViewBook">
+                            <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                            View Books
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="col-9 right-side w-100" id="right-side">
+        <section class="number-of-data">
+            <div class="row">
+                <div class="col col-3 p-2">
+                    <div class=" py-5  text-center">
+                        <h4 class="mb-3 green">3</h4>
+                        <h6>Admin</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class=" py-5  text-center">
+                        <h4 class="mb-3 red">15</h4>
+                        <h6>Teacher</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class="py-5  text-center">
+                        <h4 class="mb-3 green">30</h4>
+                        <h6>Student</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class="py-5  text-center">
+                        <h4 class="mb-3 red">4</h4>
+                        <h6>Librarian</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class="py-5  text-center">
+                        <h4 class="mb-3 red">130</h4>
+                        <h6>Parent</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class="py-5  text-center">
+                        <h4 class="mb-3 green">50</h4>
+                        <h6>Course</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class="py-5  text-center">
+                        <h4 class="mb-3 red">30</h4>
+                        <h6>Event</h6>
+                    </div>
+                </div>
+                <div class="col col-3 p-2">
+                    <div class=" py-5  text-center">
+                        <h4 class="mb-3 green">250</h4>
+                        <h6>Book</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="p-2">
+            <div class="my-3 p-4 stu-title text-center">
+                <span class="mr-2"><i class="fas fa-chevron-right"></i></span>
+                Students
+                <span class="ml-2"><i class="fas fa-chevron-left"></i></span>
+            </div>
+        </div>
+        <section class="students-table p-2">
+            <table class="table table-hover table-dark ">
+                <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">fee</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>Ahmed Mahmoud</td>
+                    <td>4</td>
+                    <td>123@123.com</td>
+                    <td>1006126863</td>
+                    <td>Damanhour</td>
+                    <td>True</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+</div>
+
+</body>
+</html>
+

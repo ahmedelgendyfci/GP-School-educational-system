@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+<section class="all-students">
+    <section class="students-table p-2">
+        <table class="table table-hover table-dark ">
+            <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Email</th>
+                <th scope="col">Name</th>
+                <th scope="col">Level</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Fee</th>
+                <th scope="col">Edit</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each stu}}
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>{{email}}</td>
+                    <td>{{name}}</td>
+                    <td>{{level}}</td>
+                    <td>{{phoneNumber}}</td>
+                    <td>{{address}}</td>
+                    <td>{{gender}}</td>
+                    <td>{{fee}}</td>
+                    <td>
+                        <a href="#" onclick="editItem('student/{{_id}}')">Edit</a>
+                        <a href="#" onclick="deleteItem('/student/{{_id}}','allStudents')" >Delete</a>
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </section>
+</section>
+</body>
+</html>

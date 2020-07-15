@@ -1,0 +1,33 @@
+<section class="all-parents">
+    <section class="parents-table p-2">
+        <table class="table table-hover table-dark ">
+            <thead>
+            <tr>
+                <th scope="row">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Student Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Edit/delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each parents}}
+                <tr>
+                    <th scope="row"><img src="https://via.placeholder.com/50" alt=""></th>
+                    <td>{{name}}</td>
+                    <td>{{email}}</td>
+                    <td>{{studentEmail}}</td>
+                    <td>{{password}}</td>
+                    <td>{{gender}}</td>
+                    <td>
+                        <a href="#" onclick="editItem('parent/{{_id}}')">Edit</a>
+                        <a href="#" onclick="deleteItem('/parent/{{_id}}','allParents')" >Delete</a>
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </section>
+</section>
