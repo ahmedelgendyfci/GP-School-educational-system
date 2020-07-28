@@ -1,0 +1,87 @@
+.cam {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', 'Calibri', Arial, sans-serif;
+    height: 100vh;
+}
+.cam #app {
+    background: #94cac5;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
+}
+.cam .sidebar {
+    background: #eceff1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.cam .sidebar h2 {
+    font-weight: normal;
+    font-size: 1.0rem;
+    background: #607d8b;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+.cam .sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.cam .sidebar li {
+    line-height: 175%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-wrap: none;
+    text-overflow: ellipsis;
+}
+.cam .cameras ul {
+    padding: 15px 20px;
+}
+.cam .cameras .active {
+    font-weight: bold;
+    color: #009900;
+}
+.cam .cameras a {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cam .cameras a:hover {
+    text-decoration: underline;
+}
+.cam .scans li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.cam .scans-enter-active {
+    transition: background 3s;
+}
+.cam .scans-enter {
+    background: yellow;
+}
+.cam .empty {
+    font-style: italic;
+}
+.cam .preview-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.cam #preview{
+    border-radius: 10px;
+}
+
+.cam #scansView,
+.cam .sidebar li{
+    color: #179baf;
+    font-weight: bold;
+}
+

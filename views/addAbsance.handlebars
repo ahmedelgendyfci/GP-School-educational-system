@@ -1,0 +1,31 @@
+<div>
+    {{>header}}
+</div>
+<section class="cam">
+<div id="app">
+    <div class="sidebar">
+        <section class="cameras">
+            <button class="btn btn-outline-info w-100 btn-camera">Open Camera</button>
+            <h2>Cameras</h2>
+            <ul>
+                <li id="cameras">
+                    Click "Open Camera" Button
+                </li>
+            </ul>
+        </section>
+        <section class="scans">
+            <h2>Scans</h2>
+           <div id="scansView" class=" p-2">
+                No Scans Yet
+           </div>
+        </section>
+    </div>
+    <div class="preview-container">
+        <video id="preview"></video>
+    </div>
+</div>
+</section>
+
+<footer>
+    {{>footer}}
+</footer>
