@@ -5,7 +5,6 @@ const app = express()
 const bodyParser = require('body-parser');
 
 require('./model/db')
-
 // set handlebars engine for html content.
 app.engine('handlebars',exphbs());
 app.set('view engine', 'handlebars');
@@ -55,8 +54,8 @@ app.get('/newst',(req,res)=>{
 app.get('/teacherProfile',(req,res)=>{
     res.render('teacherProfile')
 })
-app.get('/addAttandance',(req,res)=>{
-    res.render('addAttendance')
+app.get('/addAbsance',(req,res)=>{
+    res.render('addAbsance');
 })
 app.get('/events',(req,res)=>{
     res.render('eventsList')

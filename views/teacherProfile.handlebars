@@ -1,352 +1,458 @@
-<section class="profile">
-    <div class="row">
-        <!--        left side-->
-        <div class="col col-2 border">
-
-            <div class="link p-3 text-center">
-                <img src="https://via.placeholder.com/50" alt="" class="rounded-circle">
-            </div>
-            <div class="link p-3">
-                <a href="">Home Page</a>
-            </div>
-            <div class="link p-3">
-                <a href="">Chat</a>
-            </div>
-            <div class="link p-3">
-                <a href="">Student absence </a>
-            </div>
-            <div class="link p-3">
-                <a href="">Request Book</a>
-            </div>
-            <div class="link p-3">
-                <a href="/calendar">Calender</a>
-            </div>
-            <div class="link p-3">
-                <a href="/event">Event</a>
-            </div>
-            <div class="link p-3">
-                <a href="">About Us</a>
-            </div>
-            <div class="link p-3">
-                <a href="">Contact Us</a>
-            </div>
-        </div>
-
-        <!--        right side-->
-        <div class="col col-10">
-            <div class="intro text-center ">
-                <div class="profile-pic p-4">
-                    <img src="https://via.placeholder.com/150" alt="" class="rounded-circle">
-                </div>
-                <div class="profile-name">
-                    <h2>Student Name</h2>
-                    <div>
-                        <span class="p-3">Level</span>
-                        <span class="p-3">Class</span>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                    <div class="row">
-                        <div class="col col-2">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Details
-                                    </button>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Courses
-                                    </button>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Schedule
-                                    </button>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="card-header" id="headingFour">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Attendance
-                                    </button>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="card-header" id="headingFive">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Exam
-                                    </button>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="card-header" id="headingSix">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        Result
-                                    </button>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--             profile links content             -->
+<div>
+    {{>header}}
+</div>
+<div class="head p-5 text-center">
+    Our Teachers
+</div>
+<section class="teacher-profile  py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col col-8">
 
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <div class="basic">
-                                <div class="border mb-5 p-3">
-                                    <h4>Basic information</h4>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Full Name:
-                                        </div>
-                                        <div class="col col-8">
-                                            Student Name
-                                        </div>
-                                        <div class="col col-1">
-                                            <a href="">Edit</a>
-                                        </div>
-                                    </div>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Email:
-                                        </div>
-                                        <div class="col col-8">
-                                            Student Email
-                                        </div>
-                                    </div>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Password:
-                                        </div>
-                                        <div class="col col-8">
-                                            13ascd5265cd
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="border mb-5 p-3">
-                                    <h4>Additional information</h4>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Address:
-                                        </div>
-                                        <div class="col col-8">
-                                            Student address
-                                        </div>
-                                    </div>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Phone number:
-                                        </div>
-                                        <div class="col col-8">
-                                            Student Number
-                                        </div>
-                                    </div>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Level:
-                                        </div>
-                                        <div class="col col-8">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Gender:
-                                        </div>
-                                        <div class="col col-8">
-                                            Male
-                                        </div>
-                                    </div>
-                                    <div class="row p-2 pl-5">
-                                        <div class="col col-3">
-                                            Fee:
-                                        </div>
-                                        <div class="col col-8">
-                                            True
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                <div class="card mb-3 w-100 border-0 profile-intro">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 mb-5 pr-5">
+                            <img src="https://via.placeholder.com/150" class="card-img img-fluid rounded-circle"
+                                 alt="...">
                         </div>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body border-bottom">
-                            <!--              header          -->
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 p-4"><strong>Term</strong></div>
-                                <div class="col col-6 border border-right-0 p-4"><strong>Subject</strong></div>
-                                <div class="col col-3 border p-4"><strong>Grade</strong></div>
-                            </div>
-                            <!--              body            -->
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
-                                <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Computer Science</div>
-                                <div class="col col-3 border border-top-0 p-3 pl-4">56</div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
-                                <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Multimedia</div>
-                                <div class="col col-3 border border-top-0 p-3 pl-4">80</div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
-                                <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Network</div>
-                                <div class="col col-3 border border-top-0 p-3 pl-4">67</div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
-                                <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Files</div>
-                                <div class="col col-3 border border-top-0 p-3 pl-4">63</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <table class="table">
-                                <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Saturday</th>
-                                    <th scope="col">Sunday</th>
-                                    <th scope="col">Monday</th>
-                                    <th scope="col">Tuesday</th>
-                                    <th scope="col">Wednesday</th>
-                                    <th scope="col">Thursday</th>
-                                    <th scope="col">Friday</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Otto</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                        <div class="card-body border-bottom">
-                            <!--              header          -->
-                            <div class="row">
-                                <div class="col col-2 border border-right-0 p-4"><strong>Exam Type</strong></div>
-                                <div class="col col-4 border border-right-0 p-4"><strong>Subject</strong></div>
-                                <div class="col col-4 border border-right-0 p-4"><strong>Deadline</strong></div>
-                                <div class="col col-2 border p-4"><strong>Make Exam</strong></div>
-                            </div>
-                            <!--              body            -->
-                            <div class="row">
-                                <div class="col col-2 border border-right-0 border-top-0 p-3 pl-4">Midterm</div>
-                                <div class="col col-4 border border-right-0 border-top-0  p-3 pl-4">Computer Science</div>
-                                <div class="col col-4 border border-right-0 border-top-0  p-3 pl-4">70 hours</div>
-                                <div class="col col-2 border border-top-0 p-3 pl-4">
-                                    <a href="">Start</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                        <div class="card-body">
-
-                            <!--              header          -->
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 p-4"><strong>Exam Type</strong></div>
-                                <div class="col col-6 border border-right-0 p-4"><strong>Subject</strong></div>
-                                <div class="col col-3 border p-4"><strong>Exam Grade</strong></div>
-                            </div>
-                            <!--              body            -->
-                            <div class="row">
-                                <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">Midterm</div>
-                                <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Computer Science</div>
-                                <div class="col col-3 border border-top-0 p-3 pl-4">15.5</div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Leo Messi</h3>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text text-center mt-5"><small class="text-muted">
+                                    <a href="#"><i class="fab fa-facebook-f m-2"></i></a>
+                                    <a href="#"><i class="fab fa-twitter m-2"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g m-2"></i></a>
+                                </small></p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col col-2">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                            Details
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col col-2">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                            Courses
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col col-2">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                            Schedule
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col col-2">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                            Attendance
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col col-2">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                                aria-controls="collapseFive">
+                                            Exam
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col col-2">
+                                <div class="card-header" id="headingSix">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                                aria-controls="collapseSix">
+                                            Result
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--             profile links content             -->
+
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="basic">
+                                    <div class="border mb-5 p-3">
+                                        <h4>Basic information</h4>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Full Name:
+                                            </div>
+                                            <div class="col col-8">
+                                                Student Name
+                                            </div>
+                                            <div class="col col-1">
+                                                <a href="">Edit</a>
+                                            </div>
+                                        </div>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Email:
+                                            </div>
+                                            <div class="col col-8">
+                                                Student Email
+                                            </div>
+                                        </div>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Password:
+                                            </div>
+                                            <div class="col col-8">
+                                                13ascd5265cd
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="border mb-5 p-3">
+                                        <h4>Additional information</h4>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Address:
+                                            </div>
+                                            <div class="col col-8">
+                                                Student address
+                                            </div>
+                                        </div>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Phone number:
+                                            </div>
+                                            <div class="col col-8">
+                                                Student Number
+                                            </div>
+                                        </div>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Level:
+                                            </div>
+                                            <div class="col col-8">
+                                                1
+                                            </div>
+                                        </div>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Gender:
+                                            </div>
+                                            <div class="col col-8">
+                                                Male
+                                            </div>
+                                        </div>
+                                        <div class="row p-2 pl-5">
+                                            <div class="col col-3">
+                                                Fee:
+                                            </div>
+                                            <div class="col col-8">
+                                                True
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                             data-parent="#accordionExample">
+                            <div class="card-body border-bottom">
+                                <!--              header          -->
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 p-4"><strong>Term</strong></div>
+                                    <div class="col col-6 border border-right-0 p-4"><strong>Subject</strong></div>
+                                    <div class="col col-3 border p-4"><strong>Grade</strong></div>
+                                </div>
+                                <!--              body            -->
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
+                                    <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Computer
+                                        Science
+                                    </div>
+                                    <div class="col col-3 border border-top-0 p-3 pl-4">56</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
+                                    <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Multimedia</div>
+                                    <div class="col col-3 border border-top-0 p-3 pl-4">80</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
+                                    <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Network</div>
+                                    <div class="col col-3 border border-top-0 p-3 pl-4">67</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">First</div>
+                                    <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Files</div>
+                                    <div class="col col-3 border border-top-0 p-3 pl-4">63</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Saturday</th>
+                                        <th scope="col">Sunday</th>
+                                        <th scope="col">Monday</th>
+                                        <th scope="col">Tuesday</th>
+                                        <th scope="col">Wednesday</th>
+                                        <th scope="col">Thursday</th>
+                                        <th scope="col">Friday</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                             data-parent="#accordionExample">
+                            <div class="card-body text-center">
+                                <form action="/classCode" method="POST">
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label>Class Code</label>
+                                            <input type="text" class="form-control" id="classCode" name="classCode">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label>Teacher ID</label>
+                                            <input type="text" class="form-control" id="teacherID" name="teacherID">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <div class="">
+                                                <label>Day</label>
+                                                <select class="form-control" id="day" name="day">
+                                                    <option value="Saturday">Saturday</option>
+                                                    <option value="Sunday">Sunday</option>
+                                                    <option value="Monday">Monday</option>
+                                                    <option value="Tuesday">Tuesday</option>
+                                                    <option value="Wednesday">Wednesday</option>
+                                                    <option value="Thursday">Thursday</option>
+                                                    <option value="Friday">Friday</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <div class="">
+                                                <label>Slot</label>
+                                                <select class="form-control" id="slot" name="slot">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                <!--                                <a href="/classCode">button</a>-->
+                            </div>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                             data-parent="#accordionExample">
+                            <div class="card-body border-bottom">
+                                <!--              header          -->
+                                <div class="row">
+                                    <div class="col col-2 border border-right-0 p-4"><strong>Exam Type</strong></div>
+                                    <div class="col col-4 border border-right-0 p-4"><strong>Subject</strong></div>
+                                    <div class="col col-4 border border-right-0 p-4"><strong>Deadline</strong></div>
+                                    <div class="col col-2 border p-4"><strong>Make Exam</strong></div>
+                                </div>
+                                <!--              body            -->
+                                <div class="row">
+                                    <div class="col col-2 border border-right-0 border-top-0 p-3 pl-4">Midterm</div>
+                                    <div class="col col-4 border border-right-0 border-top-0  p-3 pl-4">Computer
+                                        Science
+                                    </div>
+                                    <div class="col col-4 border border-right-0 border-top-0  p-3 pl-4">70 hours</div>
+                                    <div class="col col-2 border border-top-0 p-3 pl-4">
+                                        <a href="">Start</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+
+                                <!--              header          -->
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 p-4"><strong>Exam Type</strong></div>
+                                    <div class="col col-6 border border-right-0 p-4"><strong>Subject</strong></div>
+                                    <div class="col col-3 border p-4"><strong>Exam Grade</strong></div>
+                                </div>
+                                <!--              body            -->
+                                <div class="row">
+                                    <div class="col col-3 border border-right-0 border-top-0 p-3 pl-4">Midterm</div>
+                                    <div class="col col-6 border border-right-0 border-top-0  p-3 pl-4">Computer
+                                        Science
+                                    </div>
+                                    <div class="col col-3 border border-top-0 p-3 pl-4">15.5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of left page section-->
+
+            <div class="col col-4 pl-5 p-3 right">
+
+                <div class="search mb-4">
+                    <h5>Search</h5>
+                    <p>Leave your keyword</p>
+                </div>
+
+                <input type="text" class=" w-75">
+                <a href="#"><i class="fas fa-search"></i></a>
+
+                <div class="search my-4">
+                    <h5>LATEST COURSES</h5>
+                    <p>Courses Will Introduce You</p>
+                </div>
+
+                <div class="row courses">
+                    <div class="col-4 pl-0">
+                        <img src="https://via.placeholder.com/100x70" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-8 pl-0">
+                        <h6>Javascript advanced</h6>
+                        <p class="level">level: 3</p>
+                    </div>
+                </div>
+                <div class="row courses">
+                    <div class="col-4 pl-0">
+                        <img src="https://via.placeholder.com/100x70" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-8 pl-0">
+                        <h6>Javascript advanced</h6>
+                        <p class="level">level: 3</p>
+                    </div>
+                </div>
+                <div class="row courses">
+                    <div class="col-4 pl-0">
+                        <img src="https://via.placeholder.com/100x70" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-8 pl-0">
+                        <h6>Javascript advanced</h6>
+                        <p class="level">level: 3</p>
+                    </div>
+                </div>
+                <div class="row courses">
+                    <div class="col-4 pl-0">
+                        <img src="https://via.placeholder.com/100x70" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-8 pl-0">
+                        <h6>Javascript advanced</h6>
+                        <p class="level">level: 3</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
 </section>
+<footer>
+    {{>footer}}
+</footer>

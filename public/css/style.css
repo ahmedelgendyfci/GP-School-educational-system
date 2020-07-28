@@ -324,6 +324,7 @@ header.home-header {
 
     /* teachers page */
 
+.teacher-profile ,
 .teachers-page{
     font-family: 'Dosis';
 }
@@ -348,6 +349,58 @@ header.home-header {
     position: relative;
     bottom: 5px;
 }
+
+.teachers-page .right .search{
+    border-left: 4px solid #94cac5;
+    padding-left: 5px;
+}
+.teachers-page .right h5,
+.teachers-page .right h6{
+    font-weight: bold;
+}
+
+.teachers-page .right input,
+.teachers-page .right input:focus{
+    border: 1px solid #0c5460;
+    padding: 3px 10px;
+    border-radius: 10px;
+    padding-right: 40px;
+    outline: none;
+}
+
+
+.teachers-page .right p{
+    color: #94cac5;
+}
+.teachers-page .right a{
+    position: relative;
+    right: 30px;
+    color: #94cac5;
+}
+.teachers-page .right .courses p{
+font-size:0.8rem
+}
+
+.teachers-page .right .courses{
+    margin-bottom: 10px;
+}
+
+
+.teachers-page .card-img-top{
+    height: 120px;
+}
+
+.teacher-profile .card-header{
+    padding: 0.75rem 0.25rem;
+}
+
+.teacher-profile .profile-intro a{
+    color: #0c5460;
+}
+
+
+
+
 
 
 
@@ -917,4 +970,14 @@ a.socialIcon:hover,
     display: flex;
     width: 100%;
     overflow: hidden;
+}
+
+
+@media  print {
+    header,footer,.btn-print{
+        display: none !important;
+    }
+    .print{
+        width: 100% !important;
+    }
 }

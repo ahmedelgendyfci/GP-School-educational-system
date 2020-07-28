@@ -1,10 +1,11 @@
 const express = require('express')
 const router = express.Router();
 const Student = require('../model/studentModel')
+const QRCode = require('qrcode')
 
 // push new student
 router.post('/newStudent', async (req,res)=>{
-    console.log(req.body)
+  //  console.log(req.body)
     const newStudent = new Student({
         "name": req.body.name,
         "email":req.body.email,
@@ -12,7 +13,8 @@ router.post('/newStudent', async (req,res)=>{
         "address":req.body.address,
         "phoneNumber": req.body.phoneNumber,
         "level":req.body.level,
-        "gender": req.body.gender
+        "gender": req.body.gender,
+        "classCode": req.body.classCode
     })
     try {
         await newStudent.save()
@@ -36,7 +38,7 @@ const allStudents = async (req,res)=>{
 }
 router.get('/allStudents',async (req,res)=>{
     const students = await allStudents(req,res)
-    console.log(students[0])
+    //console.log(students[0])
     res.render('allStudents',{
         title:"SMS || Admin Dashboard",
         stu: students
@@ -58,12 +60,34 @@ router.delete('/student/:id',async (req,res)=>{
     }
 })
 
+const studentsByClass = async (classCode) =>{
+    const students = await Student.find({classCode})
+    return students
+}
+
+router.post('/classCode',async(req,res)=>{
+    // console.log(req.body)
+    var studentCodes = [];
+    const studentsIDs = await studentsByClass(req.body.classCode)
+    studentsIDs.forEach( async(stu)=> {
+        const code = await QRCode.toDataURL("http://localhost:3000/addAbsance/"+stu._id+"/"+req.body.teacherID+"/"+req.body.day+"/"+req.body.slot);
+        studentCodes.push({
+            "classCode":stu.classCode,
+            "name": stu.name,
+            "code":code
+        })
+    })
+    res.render('classAttendance',{
+        studentCodes
+    })
+})
+
 router.get('/student/:id',async (req,res)=>{
     const _id = req.params.id;
 
     try {
         const student = await Student.findById(_id).lean();
-        console.log(student)
+        //console.log(student)
         if(!student){
             res.status(404).send('Not Found')
         }
@@ -88,7 +112,8 @@ router.patch('/student/:id',async (req,res)=>{
                 phoneNumber: req.body.phoneNumber,
                 password: req.body.password,
                 level: req.body.level,
-                fee: req.body.fee
+                fee: req.body.fee,
+                classCode: req.body.classCode
             },
             function (err, docs) {
                 if (err){

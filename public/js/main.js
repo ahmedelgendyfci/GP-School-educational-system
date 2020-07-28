@@ -72,7 +72,6 @@ $(function () {
         loadDoc('right-side','allParents')
     });
     $("#dashboardStudentTimetable").click(function(){
-
         $.when(loadDoc('right-side','studentTimetable')).then(getTimetableByLevel("/timeTable",'1'));
 
     });
@@ -106,6 +105,7 @@ $(function () {
         var address = document.getElementById("address").value
         var phoneNumber = document.getElementById("phoneNumber").value
         var level = document.getElementById("level").value
+        var classCode = document.getElementById("class").value
 
         var gender;
         if (document.getElementById('g1').checked) {
@@ -133,7 +133,8 @@ $(function () {
             phoneNumber: phoneNumber,
             level: level,
             gender: gender,
-            fee: fee
+            fee: fee,
+            classCode: classCode
         }
 
 
@@ -500,12 +501,13 @@ $(function () {
             address: document.getElementById('address').value,
             password: document.getElementById('password').value,
             phoneNumber: document.getElementById('phoneNumber').value,
+            classCode: document.getElementById('class').value,
             gender: data.gender,
             fee: data.fee,
             level: data.level
         }
 
-        // console.log(newdata)
+        console.log(newdata)
         //
         sendEditedData(url,newdata)
     }
@@ -526,6 +528,10 @@ $(function () {
         // console.log(newdata)
         //
         sendEditedData(url,newdata)
+    }
+
+    window.printAttandance = function () {
+        window.print();
     }
 
 })

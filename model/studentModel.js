@@ -39,6 +39,10 @@ const studentSchema = new mongoose.Schema({
         type: Number,
         default: 1
     },
+    classCode:{
+        type: String,
+        default: "1.1"
+    },
     gender:{
         type: String
     },

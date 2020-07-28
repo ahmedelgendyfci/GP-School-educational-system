@@ -1,6 +1,30 @@
-
-{{#each studentCodes}}
-<div>
-    <img src="{{code}}" alt="">
+<header>
+    {{>header}}
+</header>
+<div class="container mt-5 btn-print">
+    <button class="btn btn-outline-info" onclick="printAttandance()">Print the class attendance</button>
 </div>
-{{/each}}
+<div class="container print my-5 ">
+    <div class="row border d-flex flex-row align-items-center justify-content-center">
+        <div class="col-2"><strong>Course Code</strong></div>
+        <div class="col-4"><strong>Student Name</strong></div>
+        <div class="col-3"><strong>Signature</strong></div>
+        <div class="col-3 d-flex justify-content-end pr-4"><strong>QRCode</strong></div>
+    </div>
+
+    {{#each studentCodes}}
+        <div class="row border d-flex flex-row align-items-center justify-content-center">
+            <div class="col-2">{{classCode}}</div>
+            <div class="col-4">{{name}}</div>
+            <div class="col-3"></div>
+            <div class="col-3 d-flex justify-content-end pr-1">
+                <img src="{{code}}" alt="" style="width: 100px; ">
+            </div>
+        </div>
+    {{/each}}
+
+</div>
+
+<footer>
+    {{>footer}}
+</footer>
