@@ -15,14 +15,18 @@
 
     <div class=" content">
         <img src="imgs/underText.png" alt="">
-        <div class="text-center">
+        <div class="text-center pt-4">
             <h2>
                 <i class="fas fa-award"></i>
                 Education is the key of success.<br>
                 <i class="fas fa-award"></i>
                 Education is the Most Powerful Weapon
             </h2>
-            <button class="btn btn-outline-info px-5 rounded-pill">login now</button>
+            {{#if roles.student}}
+                <a href="/profile" class="btn btn-outline-secondary">
+                    Profile
+                </a>
+            {{/if}}
         </div>
     </div>
 </header>
@@ -35,51 +39,31 @@
                     <div class="row">
                         <div class="col col-12">
                             <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <span>08 April 2020</span>
-                                </div>
+                                <h2>School events</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="d-block w-100">
-                    <div class="row">
-                        <div class="col col-12">
-                            <div class="inner">
-                                <p>
-                                    Loradipisicing elit. res dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <span>08 April 2020</span>
+            {{#each events}}
+                <div class="carousel-item ">
+                    <div class="d-block w-100">
+                        <div class="row">
+                            <div class="col col-12">
+                                <div class="inner">
+                                    <h5>{{eventTitle}}</h5>
+                                    <p>
+                                        {{description}}
+                                    </p>
+                                    <div>
+                                        <span>{{eventDate}}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block w-100">
-                    <div class="row">
-                        <div class="col col-12">
-                            <div class="inner">
-                                <p>
-                                   sit amet, consectetur s eveniet facilis
-                                </p>
-                                <div>
-                                    <span>08 April 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{/each}}
         </div>
         <div class="d-flex flex-row">
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -120,6 +104,7 @@
         <img class="mb-5" src="imgs/sapec.png" alt="">
     </div>
     <div class="row">
+{{#each courses}}
         <div class="col-md-4 col-sm-6 col-12">
             <div class="card">
                 <img src="imgs/1.webp" class="card-img-top" alt="...">
@@ -128,297 +113,24 @@
                         <div class="cardSide"></div>
                     </div>
                     <h5 class="card-title mt-4">
-                        <a href="">JAVASCRIPT ONLINE COURSE</a>
+                        <a href="">{{course}}</a>
                     </h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                         additional content.</p>
 
                     <div class="card-text">
                         <div>
-                            <span class="course-info">Students: </span>
-                            126 Student
-                        </div>
-                        <div>
-                            <span class="course-info">Teachers: </span>
-                            3 Teachers
+                            <span class="course-info">Level: </span>
+                            {{level}}
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-info rounded-circle"><i class="fas fa-long-arrow-alt-right"></i>
-                        </button>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="imgs/2.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="d-flex justify-content-end">
-                        <div class="cardSide"></div>
-                    </div>
-                    <h5 class="card-title mt-4">
-                        <a href="">JAVASCRIPT ONLINE COURSE</a>
-                    </h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-
-                    <div class="card-text">
-                        <div>
-                            <span class="course-info">Students: </span>
-                            126 Student
-                        </div>
-                        <div>
-                            <span class="course-info">Teachers: </span>
-                            3 Teachers
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-info rounded-circle"><i class="fas fa-long-arrow-alt-right"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="imgs/3.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="d-flex justify-content-end">
-                        <div class="cardSide"></div>
-                    </div>
-                    <h5 class="card-title mt-4">
-                        <a href="">JAVASCRIPT ONLINE COURSE</a>
-                    </h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-
-                    <div class="card-text">
-                        <div>
-                            <span class="course-info">Students: </span>
-                            126 Student
-                        </div>
-                        <div>
-                            <span class="course-info">Teachers: </span>
-                            3 Teachers
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-info rounded-circle"><i class="fas fa-long-arrow-alt-right"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="imgs/4.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="d-flex justify-content-end">
-                        <div class="cardSide"></div>
-                    </div>
-                    <h5 class="card-title mt-4">
-                        <a href="">JAVASCRIPT ONLINE COURSE</a>
-                    </h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-
-                    <div class="card-text">
-                        <div>
-                            <span class="course-info">Students: </span>
-                            126 Student
-                        </div>
-                        <div>
-                            <span class="course-info">Teachers: </span>
-                            3 Teachers
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-info rounded-circle"><i class="fas fa-long-arrow-alt-right"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="imgs/5.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="d-flex justify-content-end">
-                        <div class="cardSide"></div>
-                    </div>
-                    <h5 class="card-title mt-4">
-                        <a href="">JAVASCRIPT ONLINE COURSE</a>
-                    </h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-
-                    <div class="card-text">
-                        <div>
-                            <span class="course-info">Students: </span>
-                            126 Student
-                        </div>
-                        <div>
-                            <span class="course-info">Teachers: </span>
-                            3 Teachers
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-info rounded-circle"><i class="fas fa-long-arrow-alt-right"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <div class="card">
-                <img src="imgs/2.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="d-flex justify-content-end">
-                        <div class="cardSide"></div>
-                    </div>
-                    <h5 class="card-title mt-4">
-                        <a href="">JAVASCRIPT ONLINE COURSE</a>
-                    </h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content.</p>
-
-                    <div class="card-text">
-                        <div>
-                            <span class="course-info">Students: </span>
-                            126 Student
-                        </div>
-                        <div>
-                            <span class="course-info">Teachers: </span>
-                            3 Teachers
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-outline-info rounded-circle"><i class="fas fa-long-arrow-alt-right"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    {{/each}}
     </div>
 </section>
 
-<section class="Teacher-quote">
-    <div class="text-center">
-        <img src="imgs/ic-testi.png" alt="">
-        <h2 class="mt-3"><strong>What Our Teacher’s Says</strong></h2>
-        <img class="mb-5" src="imgs/sapec.png" alt="">
-    </div>
-
-    <div id="carouselExampleFade" class="carousel slide " data-ride="carousel">
-        <div class="carousel-inner w-75 mx-auto">
-            <div class="carousel-item active">
-                <div class="d-block w-100">
-                    <div class="row">
-                        <div class="col col-6">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <strong class="mr-3">Cristiano Ronaldo</strong>
-                                    <span>Graphic Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-6">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <strong class="mr-3">Cristiano Ronaldo</strong>
-                                    <span>Graphic Design</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block w-100">
-                    <div class="row">
-                        <div class="col col-6">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <strong class="mr-3">Cristiano Ronaldo</strong>
-                                    <span>Graphic Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-6">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <strong class="mr-3">Cristiano Ronaldo</strong>
-                                    <span>Graphic Design</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-block w-100">
-                    <div class="row">
-                        <div class="col col-6">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <strong class="mr-3">Cristiano Ronaldo</strong>
-                                    <span>Graphic Design</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-6">
-                            <div class="inner">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, asperiores dicta
-                                    distinctio dolores eveniet facilis
-                                </p>
-                                <div>
-                                    <strong class="mr-3">Cristiano Ronaldo</strong>
-                                    <span>Graphic Design</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex flex-row">
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <i class="fas fa-long-arrow-alt-left fa-2x"></i>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <i class="fas fa-long-arrow-alt-right fa-2x"></i>
-            </a>
-        </div>
-    </div>
-</section>
 
 <section class="home-events mt-5">
     <div class="text-center">
@@ -426,29 +138,27 @@
         <h2 class="mb-3"><strong>Our School Event’s</strong></h2>
         <img class="mb-5" src="imgs/sapec.png" alt="">
     </div>
-
+    {{#each events}}
     <div class="card mb-5 w-50 mx-auto">
+
+
         <div class="row no-gutters d-flex align-items-center">
+
             <div class="col-md-4 text-center">
                 <img src="imgs/img_1.jpg" class="card-img w-75" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
                     <h4><a href="">
-                        Eduma Autumn 2017
+                        {{eventTitle}}
                     </a></h4>
-                    <p class="location">
-                        <i class="fas fa-map-marker-alt mr-2"></i>
-                        Phillip Street Jersey City, NJ United States
-                    </p>
                     <hr class="w-25">
                     <p class="dsc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum delectus dicta,
-                        distinctio dolorem.
+                        {{description}}
                     </p>
                     <div class="date">
                         <strong>
-                            <span>09</span>  May 2019 - <span>8:00 - 17:00</span>
+                            <span>{{eventDate}}</span>
                         </strong>
                     </div>
                     <div class="d-flex justify-content-end mt-2">
@@ -459,46 +169,13 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
-    <div class="card mb-3 w-50 mx-auto">
-        <div class="row no-gutters d-flex align-items-center">
-            <div class="col-md-4 text-center">
-                <img src="imgs/img_1.jpg" class="card-img w-75" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h4><a href="">
-                        Eduma Autumn 2017
-                    </a></h4>
-                    <p class="location">
-                        <i class="fas fa-map-marker-alt mr-2"></i>
-                        Phillip Street Jersey City, NJ United States
-                    </p>
-                    <hr class="w-25">
-                    <p class="dsc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cum delectus dicta,
-                        distinctio dolorem.
-                    </p>
-                    <div class="date">
-                        <strong>
-                            <span>09</span>  May 2019 - <span>8:00 - 17:00</span>
-                        </strong>
-                    </div>
-                    <div class="d-flex justify-content-end mt-2">
-                        <a href="">
-                            View Details
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    {{/each}}
     <div class="text-center">
-        <a class="btn btn-view-all border" href="">
+        <a class="btn btn-view-all border" href="/events">
             View All Events
         </a>
     </div>

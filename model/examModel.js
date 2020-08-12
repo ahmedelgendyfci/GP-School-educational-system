@@ -2,20 +2,14 @@ const mongoose = require('mongoose')
 
 const examSchema = new mongoose.Schema({
     level: Number,
+    subject:String,
     examType: String,
     deadline: Date,
-    mark: {
-        type: Number,
-        default: 0
-    },
-    teacherID: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Teacher'
-    },
-    questions:[{
-        Q_Type: String,
-        Q_Content: String
-    }]
+    mark: Number,
+    teacherEmail: String,
+    mcqQuestionID:[],
+    correctQuestionID:[]
+
 })
 
 const Exam = mongoose.model('Exam', examSchema)

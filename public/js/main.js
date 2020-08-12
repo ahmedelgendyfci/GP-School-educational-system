@@ -33,6 +33,15 @@ $(function () {
         xhttp.send();
     }
     // laod pages to admin dashboard
+    $("#dashboarNewCourse").click(function(e){
+        e.preventDefault();
+        loadDoc('right-side','newCourse')
+    });
+    $("#dashboardAllCourses").click(function(e){
+        e.preventDefault();
+        loadDoc('right-side','allCourses')
+    });
+
     $("#dashboarNewStudent").click(function(e){
         e.preventDefault();
         loadDoc('right-side','adminNewStudent')
@@ -533,5 +542,7 @@ $(function () {
     window.printAttandance = function () {
         window.print();
     }
+
+
 
 })

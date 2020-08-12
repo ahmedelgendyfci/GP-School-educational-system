@@ -1,0 +1,56 @@
+<div>
+    {{>header}}
+</div>
+<div class="w-50 mx-auto">
+    <form method="POST" action="/newExam">
+        <div class="row">
+            <div class="col col-6 p-5">
+                <div class="form-group">
+                    <label>Exam Type</label>
+                    <select class="form-control" name="examType">
+                        <option value="quiz">Quiz</option>
+                        <option value="midterm">Midterm</option>
+                        <option value="final">Final</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col col-6 p-5">
+                <div class="form-group">
+                    <label>Level</label>
+                    <select class="form-control" name="level">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col col-6 p-5">
+                <div class="form-group">
+                    <label>Teacher Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                           placeholder="name@example.com" name="teacherEmail">
+                </div>
+            </div>
+            <div class="col col-6 p-5">
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                           placeholder="arabic" name="subject">
+                </div>
+            </div>
+            <div class="col col-6 p-5">
+                <label>Deadline</label>
+                <input type="datetime-local" name="deadline" class="form-control">
+            </div>
+        </div>
+        <div class="text-center mb-5">
+            <button class="btn btn-outline-info" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<footer>
+    {{>footer}}
+</footer>

@@ -5,20 +5,14 @@ const resultSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Student'
     },
-    teacher_id: {
+    examID: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Teacher'
+        ref: 'Exam'
     },
-    total_exams:[{
-        examID:{
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Exam'
-        },
-        mark:{
-            type: Number
-        }
-    }],
-    total_mark: Number
+    teacherEmail: String,
+    examType: String,
+    course: String,
+    mark: Number
 
 
 })

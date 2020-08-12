@@ -70,14 +70,4 @@ router.get('/viewBook', async (req,res)=>{
 })
 
 
-router.get('/login',async (req,res)=>{
-    res.render('login',{
-        title:"SMS || Login"
-    })
-})
-router.get('/profile',async (req,res)=>{
-    res.render('profile',{
-        title:"SMS || profile"
-    })
-})
 module.exports = router;

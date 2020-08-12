@@ -1,8 +1,11 @@
 const mongoose = require('mongoose')
 
 const attendanceSchema = new mongoose.Schema({
-    absanceDate: {
-        type: Date
+    day: {
+        type: String
+    },
+    slot: {
+        type: String
     },
     studentId:{
         type: mongoose.Schema.Types.ObjectId,

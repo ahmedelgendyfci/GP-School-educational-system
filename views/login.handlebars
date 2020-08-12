@@ -3,12 +3,21 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <form class="box">
+                    <form class="box" action="/loginAuth" method="post">
                         <h1>Login</h1>
                         <p class="text-muted"> Please enter your login and password!</p>
-                        <input type="text" name="" placeholder="Username">
-                        <input type="password" name="" placeholder="Password">
-                        <!-- <a class="forgot text-muted" href="#">Forgot password?</a> -->
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <div class="form-group w-50 mx-auto">
+                            <div>
+                                <select class="form-control" name="role" >
+                                    <option value="student">Student</option>
+                                    <option value="teacher">Teacher</option>
+                                    <option value="librarian">Librarian</option>
+                                    <option value="parent">Parent</option>
+                                </select>
+                            </div>
+                        </div>
                         <input type="submit" name="" value="Login" href="#">
 
                     </form>

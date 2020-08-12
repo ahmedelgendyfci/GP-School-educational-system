@@ -876,6 +876,14 @@ a.socialIcon:hover,
     width: 13% !important;
 }
 
+.box select,
+.box select:focus{
+    border-radius: 50px;
+    background-color: #191919;
+    color: #86939e;
+    border: 2px solid #3396d8;
+}
+
 
 /*QRCode Scanner Style*/
 
@@ -980,4 +988,14 @@ a.socialIcon:hover,
     .print{
         width: 100% !important;
     }
+}
+
+
+.new-question,
+.do-exam{
+    font-family: Dosis;
+}
+legend{
+    font-weight: bold;
+    text-decoration: underline;
 }

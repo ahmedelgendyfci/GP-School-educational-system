@@ -28,6 +28,14 @@ router.get('/allEvents',async (req,res)=>{
     })
 })
 
+router.get('/events',async (req,res)=>{
+    const events = await allEvents(req,res)
+    res.render('eventsList',{
+        title:"SMS || Events",
+        events
+    })
+})
+
 // delete event
 router.delete('/event/:id',async (req,res)=>{
     const _id = req.params.id

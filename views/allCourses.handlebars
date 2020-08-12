@@ -1,0 +1,20 @@
+<section class="all-events">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Level</th>
+            <th scope="col">Course</th>
+            <th scope="col">Delete course</th>
+        </tr>
+        </thead>
+        <tbody> {{#each courses}}
+            <tr>
+                <td>{{level}}</td>
+                <td>{{course}}</td>
+                <td>
+                    <a href="#" onclick="deleteItem('/course/{{_id}}','allEvents')" >Delete</a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</section>

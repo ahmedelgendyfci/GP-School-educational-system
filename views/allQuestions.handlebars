@@ -1,0 +1,51 @@
+<div>
+    {{>header}}
+</div>
+<div class="container my-5">
+    <form action="/selectedQuestions/{{examID}}" method="post">
+        <input type="hidden" name="examID" value="{{examID}}">
+        <h2>All Questions For {{questions.course}} Course</h2>
+        <h5>MCQ</h5>
+        <hr>
+        <div class="row">
+            {{#each questions.mcq}}
+                <div class="col-1">
+                    <input type="checkbox" name="mcqQuestionID" value="{{_id}}">
+                </div>
+                <div class="col-11">
+                    <p class="content">{{content}}</p>
+                    <div>
+                        {{#each choice}}
+                            <div>
+                                <span>{{choiceNumber}}</span>:
+                                <span>{{choiceContent}}</span>
+                            </div>
+
+                        {{/each}}
+                    </div>
+                    <p>Answer: {{answer}}</p>
+                </div>
+            {{/each}}
+        </div>
+
+        <h5>Correct</h5>
+        <hr>
+        <div class="row">
+            {{#each questions.correct}}
+                <div class="col-1">
+                    <input type="checkbox" name="correctQuestionID" value="{{_id}}">
+                </div>
+                <div class="col-11">
+                    <p class="content">{{content}}</p>
+                    <p>Answer: {{answer}}</p>
+                </div>
+            {{/each}}
+        </div>
+
+        <button class="btn btn-outline-info">Submit</button>
+    </form>
+
+</div>
+<footer>
+    {{>footer}}
+</footer>

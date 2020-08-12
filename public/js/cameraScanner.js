@@ -18,11 +18,13 @@ $(function () {
         self.scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5 });
         self.scanner.addListener('scan', function (content, image) {
 
-          // console.log(content)
+          console.log(content)
           // window.alert(content)
-          window.location.replace(content); // send data to the submit function using ajax
+          content = content.replace('localhost:3000/newAbsance/','')
+          addAbsance(content)
+          // window.location.replace(content); // send data to the submit function using ajax
 
-          self.scans.unshift({ date: +(Date.now()), content: content });
+          self.scans.unshift({ date: +(Date.now()), content: content});
           viewScans(self.scans)
         });
         Instascan.Camera.getCameras().then(function (cameras) {
@@ -60,6 +62,21 @@ $(function () {
     }
     console.log(scanView)
     document.getElementById('scansView').innerHTML = scanView
+  }
+
+
+  function addAbsance(url) {
+    $.ajax({
+      type: "get",
+      url: "/newAbsance/"+ url,
+      success: function(){
+
+      },
+      error:function (jqXHR) {
+        alert(jqXHR.status );
+        console.clear()
+      }
+    });
   }
 })
 

@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 
 const questionBankSchema = new mongoose.Schema({
-    level:Number,
+
+    course: String,
     mcq:[{
         content:{
             type: String,
